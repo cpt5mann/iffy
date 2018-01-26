@@ -1,8 +1,7 @@
 console.log("hello world");
 
 
-var box=document.getElementById("boxy");
-var input=boxy.value;
+var input=document.getElementById("boxy");
 var output=document.getElementById("output");
 var button=document.getElementById("btn");
 
