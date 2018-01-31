@@ -53,8 +53,9 @@ button.addEventListener("click", function(){
     alert("ka-BOOM");
     alert("Are you gone yet? ")
     break;
-
-
+case 'ok':
+output.innerHTML="SURPRISE!!!"
+document.getElementById("pic").style.visibility="visible";
 
 
 
