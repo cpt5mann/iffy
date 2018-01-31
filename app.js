@@ -1,41 +1,50 @@
-console.log("hello world");
 
 
 var input=document.getElementById("boxy");
 var output=document.getElementById("output");
 var button=document.getElementById("btn");
 
-function check(){
-if(input==="1"){
-output.innerHTML="Yuh. They call it a LINE."
-}else if(input==="2"){
-output.innerHTML="Really? Are you dumb or something? 2 Sides??"
-}else if(input==="3"){
-output.innerHTML="Triangle"
-}else if(input==="4"){
- output.innerhTML="Square"   
-}else if(input==="5"){
-    output.innerHTML="Pentagon"
-    }else if(input==="6"){
-        output.innerHTML="Hexagon"
-    }else if(input==="7"){
-        output.innerHTML="Heptagont"
-    }else if(input==="8"){
-        output.innerHTML="Octagon"
-    }else if(input==="9"){
-output.innerHTML="Nonagon"
-    }else if(input==="10"){
-        output.innerHTML="Decagon"
-    }else{
-        output.innerHTML="What you talking about, child? There ain't no shape with THAT many sides! "
-    }
+button.addEventListener("click", function(){
+    switch(input.value){
+ case '1':       
+        output.innerHTML="Yuh. They call it a LINE.";
+        break;
+        case '2':
+        output.innerHTML="U dumb or something? TWO sides?";
+        break;
+       case '3':
+        output.innerHTML="Triangle";
+        break;
+        case '4':
+        output.innerHTML="Square";
+        break;
+        case '5':
+        output.innerHTML="Pentagon";
+        break;
+        case '6':
+        output.innerHTML="Heptagon";
+        break;
+        case '7':
+        output.innerHTML="7-gon";
+        break;
+        case '8':
+        output.innerHTML="Octagon";
+        break;
+        case '9':
+        output.innerHTML="Nonagon";
+        break;
+        case '10':
+        output.innerHTML="Decagon";
+        break;
+    default:
+    output.innerHTML="Type something in already, you dummy!";
+    break;
+    case 'hi':
+    output.innerHTML="NUMBERS!! OH MY GOODNESS!! WHAT PART OF THAT DO YOU NOT UNDERSTAND!! *Facepalm*";
+    
 
-};
-
-button.addEventListener("click",check);
 
 
 
 
-
-
+}});
